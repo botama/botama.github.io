@@ -1,88 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Önéletrajz</title>
-    <style>
-        img {
-            height: 200px;
-        }
-    </style>
+    <title>Portfólió oldal</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Önéletrajz</h1>
-    <img src="./PICS/oneletrajz.jpg" alt="aboutme">
-<section>
-    <h2>Személyes adatok</h2>
-<ul>
-    <li><p>Név: Boros Tamás Frigyes</p></li>
-    <li><p>Születési hely: Győr</p></li>
-    <li><p>Születési idő: 1984.07.19</p></li>
-    <li><p>Lakhely: 9171Győrújfalu, Táncsics Mihály u. 19/A</p></li>
-    <li><p>Telefon: 06/20-886-2036</p></li>
-    <li><p>E-mail: botama@gmail.com</p></li>
-    <li><p>Honlap: <a href="www.botamaphoto.hu">www.botamaphoto.hu</a></p></li>
-</ul>
-</section>
-<section>
-    <h2>Iskolai tanulmányok:</h2>
-<ul>
-    <li><p>2013 - 2015 OKJ-s Alkalmazott fotográfus szak, Budapest</p></li>
-    <li><p>2006-2010 Eszterházy Károly Főiskola, ének-zene-karvezetés szak, Eger.</p></li>
-    <li><p>2003-2006 Richter János Zeneművészeti Szakközépiskola, magánének szak, Győr.</p></li>
-    <li><p>1999-2003 Szent-Györgyi Albert Általános Iskola, Középiskola és Kollégium, környezetvédő-és vízépítő szak,Győr.</p></li>
-    <li><p>1991-1999 Szent-Györgyi Albert Általános Iskola, Középiskola és Kollégium, Győr.</p></li>
-</ul>
-</section>
-<section>
-    <h2>Nyelvtudás:</h2>
-<ul>
-    <li><p>Angol – alapfokú nyelvvizsga, társalgási szint</p></li>
-</ul>
-</section>
-<section>
-    <h2>Számítástechnikai ismeretek:</h2>
-<ul>
-    <li><p>Office alkalmazások - magas felhasználói szint</p></li>
-    <li><p>SAP – gyakorló felhasználói szint</p></li>
-    <li><p>Windows és iOs operációs rendszerek – gyakorló felhasználói szint</p></li>
-    <li><p>WordPress honlapszerkesztés – gyakorló felhasználói szint</p></li>
-    <li><p>Adobe Photoshop -gyakolró felhasználói szint</p></li>
-    <li><p>Adobe Lightroom - magas felhasználói szint</p></li>
-    <li><p>Adobe Illustrator - gyakorló felhasználói szint</p></li>
-    <li><p>Adobe Premiere - gyakorló felhasználói szint</p></li>
-</ul>
-</section>
-<section>
-    <h2>Vezetői engedélyek:</h2>
-<ul>
-    <li><p>„A1” kategóriás jogosítvány (2021)</p></li>
-    <li><p>„A” kategóriás jogosítvány (2021)</p></li>
-    <li><p>„B” kategóriás jogosítvány (2001)</p></li>
-    <li><p>„C1” kategóriás jogosítvány (2006)</p></li>
-    <li><p>„C” kategóriás jogosítvány (2006)</p></li>
-    <li><p>„BE” kategóriás jogosítvány (2010)</p></li>
-    <li><p>„C1E” kategóriás jogosítvány (2010)</p></li>
-    <li><p>„CE” kategóriás jogosítvány (2010)</p></li>
-    <li><p>„GKI” (2010)</p>
-    <li><p>„PÁV II” (2007)</p>
-</ul>
-</section>
-<section>
-    <h2>Munkatapasztalat:</h2>
-<ul>
-    <li><p>2021-napjainkig: Innovatív Speciál Transport Kft. alkalmazásában gépkocsivezető munkakörben nyerges és tandem szerelvényeken </p></li>
-    <li><p>2017-2021: Aspico Kft. alkalmazásában értékesítési asszisztens pozícióban </p></li>
-    <li><p>2016-napjainkig: Esküvők, családi portrék, rendezvények fotózása egyéni vállakozói formában</p></li>
-    <li><p>2015-2016: Ételkiszállítás győri intézményekbe a Junior Vendéglátó Zrt. alkalmazásában</p></li>
-    <li><p>2015: Innovatív Speciál Transport Kft. alkalmazásában gépkocsivezető munkakörben nyerges szerelvényen</p></li>
-    <li><p>2014-2015: XL Group Kft. alkalmazásában nemzetközi és belföldi árufuvarozás különböző szerelvényelen</p></li>
-    <li><p>2011-2014: Levimpex Kft. alkalmazásában autóalkatrész beszállítás Németországból 3,5 t furgonnal</p></li>
-    <li><p>2010-2011: Nemzetközi és belföldi árufuvarozás nyerges szerelvénnyel</p></li>
-</ul>
-</section>
-    
+    <header class="header-container">
+        <h1 class="logo" id="home">Boros Tamás frontend webfejlesztő</h1>
+        
+        <nav class="header-nav-container">
+            <input type="checkbox" name="hamburger" id="menu__toggle">
+            <label for="menu__toggle" class="hamburger-button">
+                <span class="hamburger-lines"></span>
+            </label>
+            <ul class="header-menu menu__box">
+                <li class="menu__item"><a href="#home" class="item">Főoldal</a></li>
+                <li class="menu__item"><a href="#aboutme">Magamról</a></li>
+                <li class="menu__item"><a href="#xp">Tapasztalat</a></li>
+                <li class="menu__item"><a href="#works">Munkáim</a></li>
+                <li class="menu__item"><a href="#contactid">Kapcsolat</a></li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main>
+        <section class="first_main">
+            <h2 id="aboutme">Magamról</h2>
+            <p>Boros Tamás vagyok, 2021 végén kezdtem programozással foglalkozni,
+                jelenleg még a tanulási fázisban tartok, célom, hogy a közeljövőben 
+                kitűnő frontend webfejlesztő váljon belőlem. 
+                Jelenleg egy fotós vállalkozást viszek a tanulás mellett, ezt szeretném 
+                későbbiekben is folytatni a programozás mellett.
+                Az oldalon programozással kapcsolatos tapasztalataim és befejezett projektmunkáim megtekinthetők, 
+                továbbá a kapcsolat fül alatt elérhetőségeim is megtalálhatók. 
+            </p>
+        </section>
+        <section class="experience">
+            <h2 id="xp">Tapasztalat</h2>
+            <p class="xp_first_p">Technológia terén az alábbi nyelvek magas szintű elsajátítása van folyamatban:</p>
+            <div class="project-list">
+                <div class="project-container">
+                    <p>HTML5</p>
+                    <img src="./assets/html.png" alt="html">
+                </div>
+                <div class="project-container">
+                    <p>CSS3</p>
+                    <img src="./assets/css.png" alt="css">
+                </div>
+                <div class="project-container">
+                    <p>Python</p>
+                    <img src="./assets/python.png" alt="python">
+                </div>
+            </div>
+        </section>
+        <section class="worksproject">
+            <h2 id="works">Munkáim</h2>
+            <p>Feltöltés alatt</p>
+            <div class="workspj">
+                    <div class="pj-1">Project 1 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                    <div class="pj-2">Project 2 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                    <div class="pj-3">Project 3 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                    <div class="pj-4">Project 4 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                    <div class="pj-5">Project 5 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                    <div class="pj-6">Project 6 <img src="./assets/developer.jpg" alt="developer_jpeg"></div>
+                <!--<img src="./assets/developer.jpg" alt="developer_jpeg" class="dev">-->
+            </div>
+        </section>
+        <section class="contact">
+            <h2 id="contactid">Kapcsolat</h2>
+            <p class="contparname">Boros Tamás</p>
+            <p class="contpar">Tel.: +36 20 886 2036</p>
+            <p class="contpar">email: botama@gmail.com</p>
+            <p>Amennyiben szeretnél nekem üzenetet küldeni, azt az alábbi űrlap segítségével könnyedén megteheted:</p>
+            <form class="form" action="https://formspree.io/f/meqnjeyb" method="Post">
+                <label class="form-label1">
+                    <input 
+                    type="text"
+                    name="Név"
+                    placeholder="Név">
+                </label>
+                <label class="form-label1">
+                    <input 
+                    type="text"
+                    name="email"
+                    placeholder="email">
+                </label>
+                <label class="form-label" class="textarea">
+                    <textarea name="üzenet" id="üzenet"></textarea>
+                </label>
+                <label class="form-label">
+                    <input type="submit" value="Üzenet küldése">
+                </label>
+            </form>
+        </section>
+    </main>
+    <footer >
+        <div class="bordertop"></div>
+        <nav class="footer-nav-container">
+            
+            <ul class="footer-menu">
+                <li class="menu__itemfoot"><a href="#home" class="item">Főoldal</a></li>
+                <li class="menu__itemfoot"><a href="#aboutme">Magamról</a></li>
+                <li class="menu__itemfoot"><a href="#xp">Tapasztalat</a></li>
+                <li class="menu__itemfoot"><a href="#works">Munkáim</a></li>
+                <li class="menu__itemfoot"><a href="#contactid">Kapcsolat</a></li>
+            </ul>    
+        </nav>
+
+        <p class="copyright">Copyright &copy; 2022 designed by botamaphoto</p>
+    </footer>
+
 </body>
 </html>
