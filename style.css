@@ -273,7 +273,16 @@ img {
 .form-label {
     display: block;
     margin: 20px 0;
-    width: 500px;
+    /*width: 500px;*/
+}
+
+.form-label1 {
+    width: 35%;
+}
+
+textarea {
+    width: 70%;
+    height: 150px;
 }
 
 /* -----Footer----- */
@@ -417,9 +426,14 @@ img {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {    
     .header-container {
         padding-bottom: 15px;
+        min-width: 350px;
+    }
+
+    main {
+        min-width: 350px;
     }
 
     h1 {
@@ -514,6 +528,7 @@ img {
 
     .first_main {
         padding: 0;
+        min-width: 350px;
     }
     
     .first_main p {
@@ -531,9 +546,21 @@ img {
         min-width: 350px;
     }
 
+    .xp_first_p {
+        width: 100%
+    }
+
     .worksproject {
         height: 2150px;
         min-width: 350px;
+    }
+
+    .worksproject h2 {
+        width: 100%;
+    }
+
+    .worksproject p {
+        width: 100%
     }
 
     .workspj {
@@ -552,6 +579,10 @@ img {
 
     .contact h2 {
         display: inline;
+    }
+
+    footer {
+        min-width: 350px;
     }
 
     .footer-menu {
