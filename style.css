@@ -437,7 +437,7 @@ textarea {
     }
 
     h1 {
-        min-width: 350px;
+        margin-bottom: 20px;
     }
     
     .header-menu {
